@@ -51,10 +51,8 @@ section {
 h1,
 h2,
 h3 {
-
   font-weight: 300;
   text-transform: uppercase;
-
 }
 
 h1 {
@@ -67,7 +65,6 @@ h1 {
 }
 
 h2 {
-
   font-size: 180%;
   word-spacing: 2px;
   text-align: center;
@@ -84,11 +81,10 @@ h2:after {
   display: block;
   height: 2px;
   background-color: #e67e22;
-  content: " ";
+  content: ' ';
   width: 100px;
   margin: 0 auto;
   margin-top: 30px;
-
 }
 
 /*-------Paragraph------*/
@@ -111,7 +107,6 @@ h2:after {
   display: block;
   color: #e67e22;
   margin-bottom: 10px;
-
 }
 
 .icon-small {
@@ -147,7 +142,8 @@ a:active {
 /*-------Buttons------*/
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type='submit'] {
   display: inline-block;
   padding: 10px 30px;
   font-weight: 300;
@@ -157,7 +153,8 @@ a:active {
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type='submit'] {
   background-color: #e67e22;
   border: 1px solid #e67e22;
   color: white;
@@ -171,7 +168,9 @@ a:active {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type='submit']:hover,
+input[type='submit']:active {
   background-color: #cf6d17;
 }
 
@@ -346,7 +345,6 @@ header {
   height: 50px;
   width: auto;
   margin-right: 10px;
-
 }
 
 /* -------------------------------------------------------- */
@@ -363,13 +361,13 @@ header {
   margin-bottom: 5px;
 }
 
-
 /* -------------------------------------------------------- */
 /* Testimonials */
 /* -----------------------------------------------------------  */
 
 .section-testimonials {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.795), rgba(0, 0, 0, 0.795)), url(img/back-customers.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.795), rgba(0, 0, 0, 0.795)),
+    url(img/back-customers.jpg);
   background-size: cover;
   color: white;
   background-attachment: fixed;
@@ -384,7 +382,7 @@ blockquote {
 }
 
 blockquote:before {
-  content: "\201C";
+  content: '\201C';
   font-size: 500%;
   display: block;
   position: absolute;
@@ -403,4 +401,146 @@ cite img {
   border-radius: 50%;
   margin-right: 10px;
   vertical-align: middle;
+}
+
+/* -------------------------------------------------------- */
+/* Sign up Plans */
+/* -----------------------------------------------------------  */
+
+.section-plans {
+  background-color: #f4f4f4;
+}
+
+.plan-box {
+  background-color: white;
+  border-radius: 5px;
+  /* 90% of the column */
+  width: 90%;
+  margin-left: 5%;
+  box-shadow: 0 2px 2px #efefef;
+}
+
+.plan-box div {
+  padding: 15px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.plan-box div:first-child {
+  background-color: #fcfcfc;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child {
+  text-align: center;
+  border: 0;
+}
+
+.plan-price {
+  font-size: 300%;
+  margin-bottom: 10px;
+  font-weight: 100;
+  color: #e67e22;
+}
+
+.plan-price span {
+  font-size: 30%;
+  font-weight: 300;
+}
+.plan-price-meal {
+  font-size: 80%;
+}
+
+.plan-box ul {
+  list-style: none;
+}
+
+.plan-box ul li {
+  padding: 5px, 0;
+}
+
+/* -------------------------------------------------------- */
+/* Contact form */
+/* -----------------------------------------------------------  */
+
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+input[type='text'],
+input[type='email'],
+select,
+textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type='checkbox'] {
+  margin: 10px 5px 10px 0;
+}
+*:focus {
+  outline: none;
+}
+
+/* -------------------------------------------------------- */
+/* Footer */
+/* -----------------------------------------------------------  */
+
+footer {
+  background-color: #333;
+  padding: 50px;
+}
+
+.footer-nav {
+  list-style: none;
+  float: left;
+}
+
+.social-links {
+  list-style: none;
+  float: right;
+}
+
+.footer-nav li,
+.social-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-nav li: :last-child,
+.social-links li:last-child {
+  margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #888;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  color: #ddd;
+}
+
+.social-links li a:hover,
+.social-links li a:active {
+  font-size: 180%;
+}
+
+footer p {
+  color: #888;
+  text-align: center;
+  font-size: 90%;
+  margin-top: 30px;
 }
