@@ -5,6 +5,7 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -132,6 +133,7 @@ a:visited {
   text-decoration: none;
   padding-bottom: 1px;
   border-bottom: 1px solid #e67e22;
+  -webkit-transition: border-bottom 0.2s, color 0.2s;
   transition: border-bottom 0.2s, color 0.2s;
 }
 
@@ -151,6 +153,7 @@ input[type='submit'] {
   font-weight: 300;
   text-decoration: none;
   border-radius: 200px;
+  -webkit-transition: background-color 0.2s, color 0.2s, border 0.2s;
   transition: background-color 0.2s, color 0.2s, border 0.2s;
 }
 
@@ -193,6 +196,8 @@ input[type='submit']:active {
 /* -----------------------------------------------------------  */
 
 header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.705)), to(rgba(0, 0, 0, 0.705))),
+    url(img/hero.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.705)),
     url(img/hero.jpg);
   background-size: cover;
@@ -206,6 +211,7 @@ header {
   width: 1140px;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -236,6 +242,7 @@ header {
   font-size: 90%;
   /* Border to appear before 'hover' but we don't want to see it, so it remains transparent until the hover takes place */
   border-bottom: 2px solid transparent;
+  -webkit-transition: border-bottom 2s;
   transition: border-bottom 2s;
 }
 
@@ -284,11 +291,16 @@ header {
   /* width of this item will be as much as its parent */
   width: 100%;
   height: auto;
+  -webkit-transform: scale(1.15);
   transform: scale(1.15);
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 
 .meal-photo img:hover {
+  -webkit-transform: scale(1.05);
   transform: scale(1.05);
   opacity: 1;
 }
@@ -368,6 +380,8 @@ header {
 /* -----------------------------------------------------------  */
 
 .section-testimonials {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.795)), to(rgba(0, 0, 0, 0.795))),
+    url(img/back-customers.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.795), rgba(0, 0, 0, 0.795)),
     url(img/back-customers.jpg);
   background-size: cover;
@@ -419,6 +433,7 @@ cite img {
   /* 90% of the column */
   width: 90%;
   margin-left: 5%;
+  -webkit-box-shadow: 0 2px 2px #efefef;
   box-shadow: 0 2px 2px #efefef;
 }
 
@@ -531,6 +546,7 @@ footer {
   text-decoration: none;
   border: 0;
   color: #888;
+  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
@@ -548,6 +564,7 @@ footer {
 .logo-twitter,
 .logo-googleplus,
 .logo-instagram {
+  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 

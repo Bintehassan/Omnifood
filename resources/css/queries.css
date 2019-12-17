@@ -104,9 +104,12 @@
 
     .long-copy {
         width: 100%;
-        margin: 0%;
+        margin-left: 0%;
     }
 
+    .app-screen {
+        width: 40%;
+    }
 
     .steps-box:first-child {
         text-align: center;
@@ -116,25 +119,42 @@
     .works-step div {
         height: 40px;
         width: 40px;
-        margin-right: 15%;
-        padding: 4%;
+        padding: 3px;
+        margin-right: 15px;
         font-size: 120%;
     }
 
     .works-step {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
     .works-step:last-of-type {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
-    .app-screen {
-        width: 40%;
+    .footer-nav {
+        text-align: justify;
     }
 
 
 }
 
 /* small phones from 0 to 480px */
-@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 480px) {
+    section {
+        padding: 25px 0;
+    }
+
+    .footer-nav {
+        text-align: justify;
+    }
+
+    .social-links {
+        margin-right: 25%;
+        padding-top: 15px;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+}
