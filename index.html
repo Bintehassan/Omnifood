@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="vendors/css/animate.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" />
   <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" />
+
   <title>Omnifood</title>
 </head>
 
@@ -21,13 +22,15 @@
       <div class="row">
         <img src="resources/img/logo-white.png" alt="Omnifood Logo" class="logo" />
         <img src="resources/img/logo.png" alt="Omnifood Logo" class="logo-black" />
-        <ul class="main-nav">
+        <ul class="main-nav js--main-nav">
           <li><a href="#features">Food Delivery</a></li>
           <li><a href="#works">How It Works</a></li>
           <li><a href="#cities">Our Cities</a></li>
           <li><a href="#plans">Sign Up</a></li>
         </ul>
-        <a class="hamburger-menu"><i class="ion-navicon-round"></i></a>
+        <a class="hamburger-menu js--mobile-nav-icon">
+          <ion-icon name="menu" class="js--hamburger-nav-icon"></ion-icon>
+        </a>
       </div>
     </nav>
     <div class="hero-text-box">

@@ -197,13 +197,11 @@ input[type='submit']:active {
 /* -----------------------------------------------------------  */
 
 header {
-  background-image: -webkit-gradient(
-      linear,
+  background-image: -webkit-gradient(linear,
       left top,
       left bottom,
       from(rgba(0, 0, 0, 0.705)),
-      to(rgba(0, 0, 0, 0.705))
-    ),
+      to(rgba(0, 0, 0, 0.705))),
     url(img/hero.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.705)),
     url(img/hero.jpg);
@@ -275,6 +273,11 @@ header {
   margin-top: 30px;
   cursor: pointer;
   display: none;
+}
+
+.hamburger-menu ion-icon {
+  font-size: 200%;
+  color: #fff;
 }
 
 /* Sticky Navigation */
@@ -435,13 +438,11 @@ header {
 /* -----------------------------------------------------------  */
 
 .section-testimonials {
-  background-image: -webkit-gradient(
-      linear,
+  background-image: -webkit-gradient(linear,
       left top,
       left bottom,
       from(rgba(0, 0, 0, 0.795)),
-      to(rgba(0, 0, 0, 0.795))
-    ),
+      to(rgba(0, 0, 0, 0.795))),
     url(img/back-customers.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.795), rgba(0, 0, 0, 0.795)),
     url(img/back-customers.jpg);
